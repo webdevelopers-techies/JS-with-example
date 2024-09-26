@@ -1,0 +1,10 @@
+Project: Create a simple to-do list application using the concepts covered.
+
+Requirements:
+
+    Use classes and objects to represent tasks.
+    Select elements to interact with the DOM.
+    Change content and styles based on user actions.
+    Add and remove tasks dynamically.
+    Handle events to manage task interactions.
+    Use promises and async/await to simulate saving and loading tasks from a server.
