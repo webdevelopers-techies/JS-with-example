@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Definition: A constructor is a special method in a class that gets called when a new object is created. It initializes the object's properties. -->
+    <script>
+        // Class representing a book
+        class Book {
+            // Constructor to initialize the book's properties
+            constructor(title, author, yearPublished) {
+                this.title = title;
+                this.author = author;
+                this.yearPublished = yearPublished;
+            }
+
+            // Method to display book details
+            getSummary() {
+                return `${this.title} by ${this.author}, published in ${this.yearPublished}`;
+            }
+        }
+
+        // Creating an object of the Book class
+        const myBook = new Book('1984', 'George Orwell', 1949);
+        console.log(myBook.getSummary()); // Output: 1984 by George Orwell, published in 1949
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Definition: Advanced event handling involves adding listeners to elements to respond to user actions. -->
+    <script>
+        // Adding an event listener to a button
+        const button = document.querySelector('button');
+        button.addEventListener('click', function () {
+            alert('Button clicked!');
+        });
+
+        // Adding event delegation
+        document.querySelector('ul').addEventListener('click', function (event) {
+            if (event.target.tagName === 'LI') {
+                alert(`You clicked on ${event.target.textContent}`);
+            }
+        });
+    </script>
+</body>
+
+</html>

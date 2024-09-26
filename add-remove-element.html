@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Definition: Adding and removing elements involves creating new DOM elements or removing existing ones dynamically. -->
+    <script>
+        // Adding a new element to the DOM
+        const newPara = document.createElement('p');
+        newPara.textContent = 'This is a new paragraph';
+        document.body.appendChild(newPara);
+
+        // Removing an element from the DOM
+        const oldPara = document.getElementById('oldPara');
+        oldPara.parentNode.removeChild(oldPara);
+
+    </script>
+</body>
+
+</html>

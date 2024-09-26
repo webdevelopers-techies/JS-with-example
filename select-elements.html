@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Definition: Selecting elements involves using methods to access elements in the DOM. -->
+    <script>
+        // Selecting an element by ID
+        const heading = document.getElementById('heading');
+        console.log(heading.textContent); // Output: (Content of the element with ID 'heading')
+
+        // Selecting elements by class
+        const items = document.getElementsByClassName('item');
+        console.log(items.length); // Output: (Number of elements with class 'item')
+
+        // Selecting an element using querySelector
+        const firstItem = document.querySelector('.item');
+        console.log(firstItem.textContent); // Output: (Content of the first element with class 'item')
+
+    </script>
+</body>
+
+</html>

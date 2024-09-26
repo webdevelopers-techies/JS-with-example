@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Definition: Methods are functions defined inside a class that describe the behaviors of the objects created from the class. -->
+    <script>
+        // Class representing a bank account
+        class BankAccount {
+            constructor(accountNumber, balance) {
+                this.accountNumber = accountNumber;
+                this.balance = balance;
+            }
+
+            // Method to deposit money into the account
+            deposit(amount) {
+                this.balance += amount;
+                return `Deposited ${amount}. New balance is ${this.balance}`;
+            }
+
+            // Method to withdraw money from the account
+            withdraw(amount) {
+                if (amount > this.balance) {
+                    return 'Insufficient balance';
+                }
+                this.balance -= amount;
+                return `Withdrew ${amount}. New balance is ${this.balance}`;
+            }
+        }
+
+        // Creating an object of the BankAccount class
+        const myAccount = new BankAccount(123456, 500);
+        console.log(myAccount.deposit(200)); // Output: Deposited 200. New balance is 700
+        console.log(myAccount.withdraw(100)); // Output: Withdrew 100. New balance is 600
+
+    </script>
+</body>
+
+</html>

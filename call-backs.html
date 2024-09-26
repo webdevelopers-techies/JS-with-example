@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Definition: A callback is a function passed into another function as an argument to be executed later. -->
+    <script>
+        // Function that takes a callback
+        function fetchData(callback) {
+            setTimeout(() => {
+                const data = { name: 'John Doe', age: 30 };
+                callback(data);
+            }, 2000);
+        }
+
+        // Using the callback
+        fetchData((data) => {
+            console.log('Data received:', data);
+        });
+
+    </script>
+</body>
+
+</html>

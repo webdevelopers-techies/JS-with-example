@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Definition: Inheritance allows a class to inherit properties and methods from another class, promoting code reuse. -->
+    <script>
+        // Parent class Animal
+        class Animal {
+            constructor(name) {
+                this.name = name;
+            }
+
+            // Method to make the animal speak
+            speak() {
+                return `${this.name} makes a sound`;
+            }
+        }
+
+        // Child class Dog inheriting from Animal
+        class Dog extends Animal {
+            constructor(name, breed) {
+                super(name); // Calling the parent class constructor
+                this.breed = breed;
+            }
+
+            // Overriding the speak method
+            speak() {
+                return `${this.name} barks`;
+            }
+        }
+
+        // Creating an object of the Dog class
+        const myDog = new Dog('Buddy', 'Golden Retriever');
+        console.log(myDog.speak()); // Output: Buddy barks
+
+    </script>
+</body>
+
+</html>

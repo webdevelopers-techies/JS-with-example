@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Definition: Encapsulation restricts access to certain details of an object, exposing only what is necessary through methods. -->
+    <script>
+        // Class representing a user with private properties
+        class User {
+            #password; // Private property
+
+            constructor(username, password) {
+                this.username = username;
+                this.#password = password;
+            }
+
+            // Method to check the password
+            checkPassword(password) {
+                return this.#password === password;
+            }
+        }
+
+        // Creating an object of the User class
+        const user = new User('johnDoe', 'secret123');
+        console.log(user.checkPassword('secret123')); // Output: true
+        console.log(user.checkPassword('wrongPassword')); // Output: false
+
+    </script>
+</body>
+
+</html>
